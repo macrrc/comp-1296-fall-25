@@ -122,6 +122,7 @@ for i in range(5):
     print("i is", i)
 ```
 
+**NOTE:** It's ok to use a one letter variable here by convention `i` stands for iterator.
 **Say:** “`i` takes each value from the sequence returned by `range(5)`.”  
 **When to choose `for`:** When you **know** the items/length in advance (iterate through them).
 
@@ -234,8 +235,8 @@ print(message[1:4])  # 'ell' (slice from index 1 up to, not including, 4)
 **Iteration demo (each character)**
 
 ```python
-for ch in "banana":
-    print(ch)
+for char in "banana":
+    print(char)
 ```
 
 **Mini-task (class prompt):** “Count vowels in a word.”
@@ -245,8 +246,8 @@ text = "programming"
 vowels = "aeiou"
 count = 0
 
-for ch in text:
-    if ch in vowels:
+for char in text:
+    if char in vowels:
         count += 1
 
 print("Vowel count:", count)
@@ -264,18 +265,18 @@ print("Vowel count:", count)
 **Basics + iteration**
 
 ```python
-colors = ["red", "green", "blue"]
-for c in colors:
-    print(c)
+colours = ["red", "green", "blue"]
+for colour in colours:
+    print(colour)
 ```
 
 **Modify**
 
 ```python
-colors.append("yellow")   # add to end
-colors[1] = "teal"        # change by index
-del colors[0]             # remove by index
-print(colors)
+colours.append("yellow")   # add to end
+colours[1] = "teal"        # change by index
+del colours[0]             # remove by index
+print(colours)
 ```
 
 **Common pitfalls:**
@@ -319,8 +320,8 @@ print(x, y)
 
 ```python
 total = 0
-for n in range(1, 11):   # 1..10 inclusive
-    total += n
+for num in range(1, 11):   # 1..10 inclusive
+    total += num
 print("Total:", total)
 ```
 
@@ -331,10 +332,10 @@ print("Total:", total)
 ```python
 scores = [88, -1, 92, 79, -5, 93]
 valid = []
-for s in scores:
-    if s < 0:
+for score in scores:
+    if score < 0:
         continue          # skip invalid
-    valid.append(s)
+    valid.append(score)
 print("Valid scores:", valid)
 ```
 
