@@ -205,6 +205,13 @@ for _ in range(3):
     pass  # useful while stubbing out code
 ```
 
+**Teaching Side-Note on \_:**
+
+- The underscore (\_) is not special syntax — it’s just a variable name.
+- By convention, Python programmers use \_ to mean “I don’t care about this value.”
+- In for _ in range(3):, Python still assigns 0, 1, 2 to _, but we don’t use it.
+- This signals to human readers: “We’re looping 3 times, but we don’t care about the counter.”
+
 **When to use which:**
 
 - **`break`** when you’ve found what you needed or must stop early.
