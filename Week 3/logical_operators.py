@@ -32,4 +32,3 @@ print(False or False) # Evaluates to False
 # Truth Tables with more than 2
 print(True and True or False)
 print(True and False and True and False or False)
-
